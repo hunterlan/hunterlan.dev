@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {MatIconRegistry} from "@angular/material/icon";
+import {DomSanitizer} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hunterlandev';
+
+  private icons = [
+    {
+      iconName: 'github-mark',
+      url: '../assets/icons/github-mark.svg',
+    },
+    {
+      iconName: 'github-mark-white',
+      url: '../assets/icons/github-mark-white.svg',
+    }
+  ];
+
+  constructor(private readonly matIconRegistry: MatIconRegistry,
+              private readonly domSanitizer: DomSanitizer) {
+    for (const icon of this.icons) {
+      this.matIconRegistry.addSvgIcon(icon.iconName, this.domSanitizer.bypassSecurityTrustResourceUrl(icon.url));
+    }
+  }
 }
