@@ -2,3 +2,17 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.links {
+  text-decoration: none; /* Remove underline */
+  color: inherit;
+  padding: 0 0.5rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.main-link {
+  font-family: "Pixelify Sans", sans-serif;
+}

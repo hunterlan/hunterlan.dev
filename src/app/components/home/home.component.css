@@ -1,0 +1,36 @@
+.support-ukraine {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #FFDD00 #0057B7 #0057B7 #FFDD00;
+  padding: 0 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.photo {
+  float:left;
+  margin-right: 10px;
+}
+
+.photo img {
+  display: block;
+  width: 200px
+}
+
+@media(max-width: 700px)
+{
+  .support-ukraine {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFDD00 #0057B7 #0057B7 #FFDD00;
+    padding: 0 0.5rem;
+  }
+
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo img {
+    width: 100%
+  }
+}

@@ -1,0 +1,11 @@
+.footer {
+  /* Set the footer to the bottom of the page */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1em;
+}
+
+mat-icon {
+  padding: 0 8px
+}

@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "name": "LoginTreeMerkle",
+      "description": "Store valuable data with Merkle's tree",
+      "languages": ["C#, Angular"],
+      "link": "https://github.com/hunterlan/LoginTreeMerkle"
+    },
+    {
+      "name": "DocSession",
+      "description": "",
+      "languages": ["C#, Angular"],
+      "link": "https://github.com/hunterlan/DocSession"
+    },
+    {
+      "name": "mobile_anonfiles",
+      "description": "Mobile version of anonfiles, which allows you anonymously share files by link",
+      "languages": ["Flutter"],
+      "link": "https://github.com/hunterlan/mobile_anonfiles"
+    },
+    {
+      "name": "OddityX",
+      "description": "Windows application to see all data about SpaceX.",
+      "languages": ["C#, WinUI3"],
+      "link": "https://github.com/hunterlan/OddityX"
+    },
+    {
+      "name": "https://github.com/hunterlan/Aspell",
+      "description": "Check orphographic error in commentaries of your code",
+      "languages": ["C#"],
+      "link": "https://github.com/hunterlan/Aspell"
+    }
+  ]
+}

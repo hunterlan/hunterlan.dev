@@ -8,12 +8,12 @@ import {DomSanitizer} from "@angular/platform-browser";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hunterlandev';
+  title = 'Kostiantyn Sharykin';
 
   private icons = [
     {
       iconName: 'github-mark',
-      url: '../assets/icons/github-mark.svg',
+      url: '../assets/icons/github-icon.svg',
     },
     {
       iconName: 'github-mark-white',

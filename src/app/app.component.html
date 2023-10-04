@@ -1,4 +1,11 @@
-<mat-toolbar>
-  <a routerLink="">hunterlan.dev</a>
+<mat-toolbar color="primary">
+  <a routerLink="" class="links main-link">hunterlan.dev</a>
+  <span class="spacer"></span>
+  <a routerLink="" class="links">Home</a>
+  <a routerLink="/projects" class="links">Projects</a>
+  <a routerLink="/blog" class="links">Blog</a>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<div class="main-body">
+  <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>
