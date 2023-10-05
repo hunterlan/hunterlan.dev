@@ -7,7 +7,7 @@ import {DatePipe} from "@angular/common";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  myBirthday: Date = new Date('2023-09-28');
+  myBirthday: Date = new Date('2000-09-28');
   currentAge: number = 0;
 
   constructor(private readonly datePipe: DatePipe) {

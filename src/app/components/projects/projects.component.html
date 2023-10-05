@@ -1,4 +1,14 @@
 <h2>Projects</h2>
 <p>Most projects that are located here were created to study programming languages.
   However, I'll be happy, if you find it useful for yourself. </p>
-
+<div class="collection-cards">
+  <mat-card *ngFor="let project of projects" class="card">
+    <a [href]="project.link" class="links" >{{project.name}}</a>
+    <p>{{project.description}}</p>
+    <p>
+      <mat-icon fontIcon="keyboard_arrow_left" [inline]="true"/>
+      <mat-icon fontIcon="keyboard_arrow_right" [inline]="true"/>
+      {{project.languages}}
+    </p>
+  </mat-card>
+</div>

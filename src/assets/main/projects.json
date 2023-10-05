@@ -8,7 +8,7 @@
     },
     {
       "name": "DocSession",
-      "description": "",
+      "description": "Replace description",
       "languages": ["C#, Angular"],
       "link": "https://github.com/hunterlan/DocSession"
     },
@@ -25,7 +25,7 @@
       "link": "https://github.com/hunterlan/OddityX"
     },
     {
-      "name": "https://github.com/hunterlan/Aspell",
+      "name": "Aspell",
       "description": "Check orphographic error in commentaries of your code",
       "languages": ["C#"],
       "link": "https://github.com/hunterlan/Aspell"

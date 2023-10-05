@@ -14,6 +14,7 @@ import {DatePipe} from "@angular/common";
 import {MatIconModule} from "@angular/material/icon";
 import {SharedModule} from "./shared/shared.module";
 import {HttpClientModule} from "@angular/common/http";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -22,17 +23,18 @@ import {HttpClientModule} from "@angular/common/http";
     ProjectsComponent,
     UkraineComponent
   ],
-  imports: [
-    AppRoutingModule,
-    BrowserModule,
-    RouterOutlet,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatListModule,
-    MatIconModule,
-    SharedModule,
-    HttpClientModule
-  ],
+    imports: [
+        AppRoutingModule,
+        BrowserModule,
+        RouterOutlet,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatListModule,
+        MatIconModule,
+        SharedModule,
+        HttpClientModule,
+        MatCardModule
+    ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
 })
