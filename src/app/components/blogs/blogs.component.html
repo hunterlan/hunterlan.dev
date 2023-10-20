@@ -1,10 +1,13 @@
-<h2>Blogs</h2>
-<div class="blogs">
-  <div *ngFor="let blog of blogs" (click)="goToBlog(blog.file)">
-    <mat-divider/>
-    <h3>{{blog.name}}</h3>
-    <p>{{blog.description}}</p>
-    <p>{{blog.date}}</p>
-    <mat-divider/>
+<div *ngIf="currentBlog === undefined">
+  <h2>Blogs</h2>
+  <div class="blogs">
+    <div *ngFor="let blog of blogs" (click)="goToArticle(blog)">
+      <mat-divider/>
+      <h3>{{blog.name}}</h3>
+      <p>{{blog.description}}</p>
+      <p>{{blog.date}}</p>
+      <mat-divider/>
+    </div>
   </div>
 </div>
+<app-article *ngIf="currentBlog !== undefined" [currentArticle]="currentBlog!" (unselectBlog)="unselectBlog()"></app-article>

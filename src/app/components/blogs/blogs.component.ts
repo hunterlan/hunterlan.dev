@@ -10,12 +10,17 @@ import * as blogsFile from '../../../assets/blogs/blogs.json'
 export class BlogsComponent {
   blogs: Blog[] = [];
   jsonBlogs = blogsFile;
+  currentBlog?: Blog;
 
   constructor() {
     this.blogs = this.jsonBlogs.blogs;
   }
 
-  goToBlog(blogFile: string): void {
-    
+  goToArticle(article: Blog): void {
+    this.currentBlog = article;
+  }
+
+  unselectBlog() {
+    this.currentBlog = undefined;
   }
 }

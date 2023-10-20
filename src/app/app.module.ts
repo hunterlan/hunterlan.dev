@@ -17,8 +17,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {MatCardModule} from "@angular/material/card";
 import { BlogsComponent } from './components/blogs/blogs.component';
 import {MatTabsModule} from "@angular/material/tabs";
-import { BlogComponent } from './components/blogs/blog/blog.component';
-import {MarkdownModule} from "ngx-markdown";
+import {MarkdownModule, MarkdownService} from "ngx-markdown";
+import { ArticleComponent } from './components/blogs/article/article.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import {MarkdownModule} from "ngx-markdown";
     ProjectsComponent,
     UkraineComponent,
     BlogsComponent,
-    BlogComponent
+    ArticleComponent
   ],
   imports: [
     AppRoutingModule,
@@ -42,7 +42,7 @@ import {MarkdownModule} from "ngx-markdown";
     MatCardModule,
     MatTabsModule,
     NgOptimizedImage,
-    MarkdownModule
+    MarkdownModule.forRoot()
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
