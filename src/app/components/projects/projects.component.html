@@ -3,12 +3,17 @@
   However, I'll be happy, if you find it useful for yourself. </p>
 <div class="collection-cards">
   <mat-card *ngFor="let project of projects" class="card">
-    <a [href]="project.link" class="links" >{{project.name}}</a>
-    <p>{{project.description}}</p>
-    <p>
-      <mat-icon fontIcon="keyboard_arrow_left" [inline]="true"/>
-      <mat-icon fontIcon="keyboard_arrow_right" [inline]="true"/>
-      {{project.languages}}
-    </p>
+    <mat-card-header class="mat-card-header">
+      <a [href]="project.link" class="links" >{{project.name}}</a>
+    </mat-card-header>
+    <mat-card-content class="mat-card-content">
+      <p>{{project.description}}</p>
+    </mat-card-content>
+    <mat-card-footer>
+      <p style="display: flex; margin-left: 16px">
+        <mat-icon svgIcon="programming-language" style="margin-right: 8px"/>
+        {{project.languages}}
+      </p>
+    </mat-card-footer>
   </mat-card>
 </div>

@@ -1,0 +1,10 @@
+{
+  "blogs": [
+    {
+      "name": "How to return our privacy",
+      "file": "./assets/blogs/how-to-return-our-privacy.md",
+      "description": "",
+      "date": "10/12/2023"
+    }
+  ]
+}

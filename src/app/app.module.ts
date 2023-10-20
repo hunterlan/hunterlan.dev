@@ -10,31 +10,40 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { UkraineComponent } from './components/ukraine/ukraine.component';
 import {MatListModule} from "@angular/material/list";
-import {DatePipe} from "@angular/common";
+import {DatePipe, NgOptimizedImage} from "@angular/common";
 import {MatIconModule} from "@angular/material/icon";
 import {SharedModule} from "./shared/shared.module";
 import {HttpClientModule} from "@angular/common/http";
 import {MatCardModule} from "@angular/material/card";
+import { BlogsComponent } from './components/blogs/blogs.component';
+import {MatTabsModule} from "@angular/material/tabs";
+import { BlogComponent } from './components/blogs/blog/blog.component';
+import {MarkdownModule} from "ngx-markdown";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProjectsComponent,
-    UkraineComponent
+    UkraineComponent,
+    BlogsComponent,
+    BlogComponent
   ],
-    imports: [
-        AppRoutingModule,
-        BrowserModule,
-        RouterOutlet,
-        BrowserAnimationsModule,
-        MatToolbarModule,
-        MatListModule,
-        MatIconModule,
-        SharedModule,
-        HttpClientModule,
-        MatCardModule
-    ],
+  imports: [
+    AppRoutingModule,
+    BrowserModule,
+    RouterOutlet,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatListModule,
+    MatIconModule,
+    SharedModule,
+    HttpClientModule,
+    MatCardModule,
+    MatTabsModule,
+    NgOptimizedImage,
+    MarkdownModule
+  ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,11 @@
+p, li {
+  font-size: 20px;
+}
+
+li {
+  margin: 2px 0;
+}
+
+.image-links {
+  margin-top: 10px;
+}

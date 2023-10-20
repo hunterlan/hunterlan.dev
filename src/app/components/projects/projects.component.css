@@ -4,20 +4,22 @@
   justify-content: space-between;
 }
 
-.card:nth-child(odd) {
+.card {
   width: 300px;
-  margin: 16px 16px 16px 0;
-  padding: 0 16px;
+  margin: 16px 0;
 }
 
-.card:nth-child(even) {
-  width: 300px;
-  margin: 16px 0 16px 16px;
-  padding: 0 16px;
+.mat-card-header {
+  flex-shrink: 0;
+}
+
+.mat-card-content{
+  flex-grow: 1;
+  overflow: auto;
 }
 
 .links {
-  text-decoration: none; /* Remove underline */
-  color: #b6316c;
+  text-decoration: none;
+  color: dodgerblue;
   padding: 0;
 }

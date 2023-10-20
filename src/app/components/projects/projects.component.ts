@@ -8,7 +8,7 @@ import {Project} from "./project";
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-  projects: Project[] = []
+  projects: Project[] = [];
   jsonProjects = projectFile;
 
   constructor() {

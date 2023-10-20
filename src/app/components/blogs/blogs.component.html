@@ -1,0 +1,10 @@
+<h2>Blogs</h2>
+<div class="blogs">
+  <div *ngFor="let blog of blogs" (click)="goToBlog(blog.file)">
+    <mat-divider/>
+    <h3>{{blog.name}}</h3>
+    <p>{{blog.description}}</p>
+    <p>{{blog.date}}</p>
+    <mat-divider/>
+  </div>
+</div>

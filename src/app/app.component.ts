@@ -16,8 +16,8 @@ export class AppComponent {
       url: '../assets/icons/github-icon.svg',
     },
     {
-      iconName: 'github-mark-white',
-      url: '../assets/icons/github-mark-white.svg',
+      iconName: 'programming-language',
+      url: '../assets/icons/programming-language.svg'
     }
   ];
 
